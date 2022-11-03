@@ -31,7 +31,7 @@
 			<ObfuscateFields>true</ObfuscateFields>
 			<ObfuscateFields>true</ObfuscateFields>
 			<VirtualFunctions>true</VirtualFunctions>
-			<OverloadedRenaming>true</OverloadedRenaming>
+			<OverloadedRenaming>false</OverloadedRenaming>
 			<NameLength>1</NameLength>
 			<FlattenNamespaces>true</FlattenNamespaces>
 			<UnicodeNormalization>true</UnicodeNormalization>
@@ -47,7 +47,11 @@
 			<!-- Protection -->
 			<SuppressIldasm>true</SuppressIldasm>
 			<DebuggingProtection>true</DebuggingProtection>
+			<VerboseLevel>5</VerboseLevel>
 		</PropertyGroup>
+		<ItemGroup>
+			<MapInFile Include="..\Project1\bin\$(Configuration)\$(TargetFramework)\Project1.dll.map.xml" />
+		</ItemGroup>
 	</Target>
 
 </Project>

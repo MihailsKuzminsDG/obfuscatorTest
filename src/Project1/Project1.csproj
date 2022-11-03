@@ -27,8 +27,8 @@
 			<ObfuscateFields>true</ObfuscateFields>
 			<ObfuscateFields>true</ObfuscateFields>
 			<VirtualFunctions>true</VirtualFunctions>
-			<OverloadedRenaming>true</OverloadedRenaming>
-			<NameLength>1</NameLength>
+			<OverloadedRenaming>false</OverloadedRenaming>
+			<NameLength>1</NameLength>			
 			<FlattenNamespaces>true</FlattenNamespaces>
 			<UnicodeNormalization>true</UnicodeNormalization>
 			<!-- Control flow -->
@@ -43,6 +43,7 @@
 			<!-- Protection -->
 			<SuppressIldasm>true</SuppressIldasm>
 			<DebuggingProtection>true</DebuggingProtection>
+			<VerboseLevel>5</VerboseLevel>
 		</PropertyGroup>
 	</Target>
 
