@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RootNamespace>Dayton.Tests</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Babel.Obfuscator" Version="9.9.3">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Project1\Project1.csproj" />
+	</ItemGroup>
+
+	<Target Name="SetupObfuscate" BeforeTargets="Obfuscate">
+		<PropertyGroup>
+			<!-- Output -->
+			<GenerateMapOutFile>true</GenerateMapOutFile>
+			<!-- Renaming -->
+			<ObfuscateTypes>true</ObfuscateTypes>
+			<ObfuscateMethods>true</ObfuscateMethods>
+			<ObfuscateProperties>true</ObfuscateProperties>
+			<ObfuscateEvents>true</ObfuscateEvents>
+			<ObfuscateParameters>true</ObfuscateParameters>
+			<ObfuscateFields>true</ObfuscateFields>
+			<ObfuscateFields>true</ObfuscateFields>
+			<VirtualFunctions>true</VirtualFunctions>
+			<OverloadedRenaming>true</OverloadedRenaming>
+			<NameLength>1</NameLength>
+			<FlattenNamespaces>true</FlattenNamespaces>
+			<UnicodeNormalization>true</UnicodeNormalization>
+			<!-- Control flow -->
+			<ControlFlowObfuscation>
+				true;token=false;underflow=false;goto=true;if=true;switch=true;case=true;call=true;value=true
+			</ControlFlowObfuscation>
+			<!-- Encryption -->
+			<StringEncryption>hash</StringEncryption>
+			<Valueencryption>
+				true;int32=true;int64=true;single=true;double=true;array=true
+			</Valueencryption>
+			<!-- Protection -->
+			<SuppressIldasm>true</SuppressIldasm>
+			<DebuggingProtection>true</DebuggingProtection>
+		</PropertyGroup>
+	</Target>
+
+</Project>
