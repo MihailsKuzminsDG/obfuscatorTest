@@ -32,7 +32,7 @@
 			<ObfuscateFields>true</ObfuscateFields>
 			<VirtualFunctions>true</VirtualFunctions>
 			<OverloadedRenaming>false</OverloadedRenaming>
-			<NameLength>1</NameLength>
+			<NameLength>3</NameLength>
 			<FlattenNamespaces>true</FlattenNamespaces>
 			<UnicodeNormalization>true</UnicodeNormalization>
 			<!-- Control flow -->
