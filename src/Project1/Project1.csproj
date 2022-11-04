@@ -30,7 +30,7 @@
 			<OverloadedRenaming>false</OverloadedRenaming>
 			<NameLength>3</NameLength>
 			<FlattenNamespaces>true</FlattenNamespaces>
-			<UnicodeNormalization>true</UnicodeNormalization>
+			<UnicodeNormalization>false</UnicodeNormalization>
 			<!-- Control flow -->
 			<ControlFlowObfuscation>
 				true;token=false;underflow=false;goto=true;if=true;switch=true;case=true;call=true;value=true
