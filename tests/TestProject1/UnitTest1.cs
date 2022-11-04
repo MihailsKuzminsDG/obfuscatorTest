@@ -30,4 +30,27 @@ public sealed class UnitTest1
 
 		Assert.Equal(123L, result);
 	}
+
+	[Fact]
+	public void TestClass()
+	{
+		var result = new DtoClass().Id;
+
+		Assert.Equal(123, result);
+	}
+
+	[Fact]
+	public void TestRecord()
+	{
+		var result = new DtoRecord();
+
+		Assert.Equal(0, result.Id);
+
+		result = result with
+		{
+			Id = 123
+		};
+
+		Assert.Equal(123, result.Id);
+	}
 }
